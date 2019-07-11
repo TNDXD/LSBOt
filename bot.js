@@ -326,12 +326,11 @@ client.on("message", message => {
 
 
 client.on("message", message => {
- if (message.content === "-invite") {
+ if (message.content === "نفسي") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setFooter('© Life Star Bot:heart: جميع الحقوق محفوظة 2019 لــبوت')
-      .addField('شكرا لك لاستخدامك ل اس ال جي بوت', `https://discordapp.com/api/oauth2/authorize?client_id=532101722055639041&permissions=0&scope=bot`)
-  message.author.send({embed});
+      .setFooter('ي هلا')  
+  message.channel.sendEmbed(embed);
 
  }
 });
