@@ -353,6 +353,43 @@ client.on("message", message => {
 
 
 
+client.on("message", message => {
+ if (message.content === "تسجيل دخول") {
+  const embed = new Discord.RichEmbed()
+      .setColor("RANDOM")
+      .setFooter('تم تسجيل دخولك بنجاح')  
+  message.channel.sendEmbed(embed);
+
+ }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+client.on("message", message => {
+ if (message.content === "تسجيل خروج") {
+  const embed = new Discord.RichEmbed()
+      .setColor("RANDOM")
+      .setFooter('تم تسجيل خروجك بنجاح')  
+  message.channel.sendEmbed(embed);
+
+ }
+});
+
+
+
 
 
 
