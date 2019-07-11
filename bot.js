@@ -1,4 +1,4 @@
-﻿const Discord = require("discord.js");
+const Discord = require("discord.js");
 const client = new Discord.Client();
 
 
@@ -291,7 +291,7 @@ client.on("message", message => {
  if (message.content === "-help") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setFooter('© PBZ Bot:heart: جميع الحقوق محفوظة 2019 لــبوت')
+      .setFooter('© Life Star Bot:heart: جميع الحقوق محفوظة 2019 لــبوت')
       .setFooter('اوامر الادمنيه')
 	  .addField('-bc', `لخاصية البرودكستات`)
       .setFooter('======================================================')
@@ -329,7 +329,7 @@ client.on("message", message => {
  if (message.content === "-invite") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setFooter('© PBZ Bot:heart: جميع الحقوق محفوظة 2019 لــبوت')
+      .setFooter('© Life Star Bot:heart: جميع الحقوق محفوظة 2019 لــبوت')
       .addField('شكرا لك لاستخدامك ل اس ال جي بوت', `https://discordapp.com/api/oauth2/authorize?client_id=532101722055639041&permissions=0&scope=bot`)
   message.author.send({embed});
 
@@ -373,7 +373,7 @@ client.on("message", message => {
  if (message.content === "-support") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setFooter('© PBZ Bot:heart: جميع الحقوق محفوظة 2019 لــبوت')  
+      .setFooter('© Life Star Bot:heart: جميع الحقوق محفوظة 2019 لــبوت')  
   message.author.send({embed});
 
  }
@@ -453,7 +453,7 @@ client.on('message', message => {
  
   .setColor("#FF0000")
   .addField('``سرعة أتصال الــبوت`` ' , `${Date.now() - message.createdTimestamp}` + ' ms`')
-                 .setFooter(` PBZ Bot
+                 .setFooter(` Life Star Bot
  .`, 'https://b.top4top.net/p_6021qh431.jpg')
 
   message.channel.sendEmbed(embed);
@@ -648,7 +648,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers `);
     console.log(`---------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setGame(`With PBZ`,"http://twitch.tv/y04zgamer")
+  client.user.setGame(`سيرفر لايف ستار`,"http://twitch.tv/y04zgamer")
    client.user.setStatus("dnd")
 });
 
@@ -841,7 +841,7 @@ if (command == "غرد") {
     .setColor('RANDOM')
     .setAuthor(msg.author.username, msg.author.avatarURL)
     .setDescription(args.join(" "))
-    .setFooter('© . :PBZ || Copyright')
+    .setFooter('© . :Life Star || Copyright')
     msg.channel.sendEmbed(embed);
     msg.delete();
   }
@@ -935,7 +935,7 @@ client.on("message", message => {
         color: 0x06DF00,
         description: "تم مسح الرسائل بنجاح",
         footer: {
-          text: "© PBZ Bot ™."
+          text: "© Life Star Bot ™."
         }
       }}).then(msg => {msg.delete(3000)});
                           }
